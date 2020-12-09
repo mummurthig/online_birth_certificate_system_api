@@ -282,7 +282,7 @@ HTTP Response Code: **200**
     ]
 }
 ```
-#### 8- GET - Get my verified applications
+#### 9- GET - Get my verified applications
 ```javascript
  http://localhost/online_birth_certificate_system/v1/users/verified_applications?UserID=1  
 ```
