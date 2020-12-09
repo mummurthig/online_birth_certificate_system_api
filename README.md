@@ -282,6 +282,31 @@ HTTP Response Code: **200**
     ]
 }
 ```
-
+#### 8- GET - Get my verified applications
+```javascript
+ http://localhost/online_birth_certificate_system/v1/users/verified_applications?UserID=1  
+```
+HTTP Response Code: **200**
+```javascript
+{
+    "records": [
+        {
+            "ID": "1",
+            "ApplicationID": "141553674",
+            "DateofBirth": "25/01/2000",
+            "Gender": "Male",
+            "PlaceofBirth": "Tamil Nadu",
+            "NameofFather": "michal",
+            "PermanentAdd": "Tamil Nadu",
+            "PostalAdd": "635203",
+            "MobileNumber": "8754699355",
+            "Email": "jhon@gmail.com.com",
+            "Remark": "your application has been verified",
+            "Status": "verified",
+	    "UpdationDate" : "20/01/2020"
+        }       
+    ]
+}
+```
 
 
