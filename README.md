@@ -16,8 +16,7 @@
  Content-Type: application/json
  
  {
-	"firstname" : "mike",
-	"lastname" : "mose",
+	"name" : "mike",	
 	"phone" : "9600361244",
 	"email" : "userone@gmail.com", 
 	"address" : "tamil nadu, india",
@@ -35,7 +34,7 @@ HTTP Response Code: **500**
 ```javascript
 {
    "status" => 0,
-   "message" => "Failed to save user"
+   "error" => "Failed to save user"
 }
 ```
 
@@ -43,14 +42,14 @@ HTTP Response Code: **501**
 ```javascript
 {
     "status": 0,
-    "message": "All data needed"
+    "error": "All data needed"
 }
 ```
 HTTP Response Code: **503**
 ```javascript
 {
     "status": 0,
-    "message": "Access Denied"
+    "error": "Access Denied"
 }
 ```
 
@@ -92,11 +91,10 @@ HTTP Response Code: **401**
 HTTP Response Code: **200**
 ```javascript
 {
-    "message": "Access granted.",
+    "msg": "Access granted.",
     "data": {
         "id": "2",
-        "firstname": "mike",
-        "lastname": "mose",
+        "name": "mike",        
         "phone": "2147483647",
         "email": "userones@gmail.com",
         "address": "tamil nadu, india"
@@ -106,8 +104,16 @@ HTTP Response Code: **200**
 HTTP Response Code: **401**
 ```javascript
 {
-    "message": "Access denied.",
+    "msg": "Access denied.",
     "error": "Syntax error, malformed JSON"
 }
 ```
+HTTP Response Code: **401**
+```javascript
+{
+    "error" => "Access denied."
+}
+```
+
+
 
